@@ -21,7 +21,7 @@ public class ScoreAverage {
             totalScore += inputScore;
             count++;
         }
-        if (count == 0) return 0;
+        if (count == 0) return 0; // 0으로 나누는 것을 방지
         return (double) totalScore / count;
     }
 
